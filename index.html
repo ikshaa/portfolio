@@ -720,6 +720,12 @@ body { overflow-x: hidden; }
   .proof { max-width: 600px; justify-self: center; width: calc(100% - 96px); }
 }
 @media (min-width: 1500px) { .hero p { font-size: 1.15rem; max-width: 52ch; } }
+
+/* Section jumps land below the sticky header */
+section, #education, #contact { scroll-margin-top: 96px; }
+@media (max-width: 760px) { section, #education, #contact { scroll-margin-top: 120px; } }
+
+.edu-head { margin-top: 56px; margin-bottom: 4px; }
 </style>
 
 </head>
@@ -733,6 +739,7 @@ body { overflow-x: hidden; }
       <a href="#work">Work</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
     </div>
     <div class="nav-right">
       <div class="social">
@@ -1016,6 +1023,7 @@ body { overflow-x: hidden; }
       <div class="sk"><h4>Data</h4><div class="chips"><span class="badge">PostgreSQL</span><span class="badge">pgvector</span><span class="badge">Elasticsearch</span><span class="badge">Redis</span><span class="badge">Snowflake</span></div></div>
       <div class="sk"><h4>Frontend &amp; Cloud</h4><div class="chips"><span class="badge">React</span><span class="badge">TypeScript</span><span class="badge">AWS</span><span class="badge">Azure</span><span class="badge">Docker</span><span class="badge">GitHub Actions</span></div></div>
     </div>
+    <div class="edu-head" id="education"><span class="kicker">Education</span></div>
     <div class="edu-row">
       <div class="edu"><b>MS Computer Science, AI/ML</b><span>Rochester Institute of Technology · 2024 – Dec 2026</span></div>
       <div class="edu"><b>BE Computer Science</b><span>Dayananda Sagar College of Engineering · 2013 – 2017</span></div>
